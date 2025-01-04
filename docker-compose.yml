@@ -27,14 +27,28 @@ services:
       - ./asynchronous-fastapi:/asynchronous-fastapi
     depends_on:
       - db
+      - redis
     environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin
       - POSTGRES_DB=fastapi_db
       - POSTGRES_PORT=5432
       - POSTGRES_SERVER=db
+      - REDIS_URL=redis://redis:6379/0
     networks:
       - mynetwork
+  
+  
+  redis:
+    image: redis:latest
+    container_name: redis-container
+    ports:
+      - "6379:6379"
+    networks:
+      - mynetwork
+      
+    
+
 
 networks:
   mynetwork:
