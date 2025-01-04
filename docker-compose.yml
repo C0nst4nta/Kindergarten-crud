@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: postgres_container
+    image: postgres:15
+    restart: always
+    ports:
+      - "5434:5432" 
+    environment:
+      - POSTGRES_USER= admin
+      - POSTGRES_PASSWORD= admin
+      - POSTGRES_DB= fastapi_db
+
+  fastapi_server:
+    container_name: fastapi_server_container
+    build: 
+      context: ./asynchronous-fastapi
+      dockerfile: Dockerfile
+    working_dir: /asynchronous-fastapi
+    ports:
+      - "8000:8000"
+    command: bash -c "uvicorn app.fastapi_server:app --reload --workers 1 --host 0.0.0.0 --port 8000 --log-level debug"
+    volumes:
+     - ./asynchronous-fastapi:/asynchronous-fastapi   
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=fastapi_db
+      - POSTGRES_PORT=5432
