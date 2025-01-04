@@ -1,6 +1,6 @@
 PROJECT STRUCTURE
 
-
+`
 ├───app
 │   ├───api
 │   │   ├───dependencies        # FastAPI dependency injection 
@@ -18,4 +18,4 @@ PROJECT STRUCTURE
 └───tests
     ├───fixtures                # where test specific fixtures live
     └───unit_tests                
-        └───test_api            # testing endpoints
+        └───test_api            # testing endpoints`
