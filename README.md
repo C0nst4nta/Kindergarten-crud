@@ -1,3 +1,18 @@
+# Kindergarten CRUD System
+
+A FastAPI-based CRUD system designed for managing parents and children records in a kindergarten setting. The project uses PostgreSQL as the database and provides a robust foundation for future extensions like database migrations and unit testing.
+
+# Technologies Used
+
+Backend: FastAPI  
+Database: PostgreSQL with SQLAlchemy and asyncpg  
+Testing: Pytest, HTTPX, and ASGI Lifespan for unit tests  
+Settings and Configurations: Managed with python-dotenv  
+Logging: Powered by Loguru  
+
+
+
+
 ### Project Structure
 ```bash
 ├───app
@@ -19,3 +34,10 @@
     └───unit_tests                
         └───test_api            # testing endpoints
 ```
+
+# Future Enhancements
+
+Database Migrations  
+Unit Testing  
+Frontend Integration  
+
