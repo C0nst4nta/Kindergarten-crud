@@ -1,6 +1,5 @@
-PROJECT STRUCTURE
-
-`
+### Project Structure
+```bash
 ├───app
 │   ├───api
 │   │   ├───dependencies        # FastAPI dependency injection 
@@ -12,10 +11,11 @@ PROJECT STRUCTURE
 │   ├───models                  
 │   │   ├───domain              # schemas related to domain entities
 │   │   └───utility_schemas     # schemas for other validation
-│   └───services                
+│   └───services                # not just CRUD related stuff
 ├───migrations
 │   └───versions
 └───tests
     ├───fixtures                # where test specific fixtures live
     └───unit_tests                
-        └───test_api            # testing endpoints`
+        └───test_api            # testing endpoints
+```
