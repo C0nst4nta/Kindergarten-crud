@@ -35,9 +35,4 @@ Logging: Powered by Loguru
         └───test_api            # testing endpoints
 ```
 
-# Future Enhancements
-
-Database Migrations  
-Unit Testing  
-Frontend Integration  
 
