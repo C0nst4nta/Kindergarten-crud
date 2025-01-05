@@ -24,6 +24,7 @@ ReDoc: http://localhost:8000/redoc
 
 ### Project Structure
 ```bash
+src
 ├───app
 │   ├───api
 │   │   ├───dependencies        # FastAPI dependency injection 
@@ -36,7 +37,7 @@ ReDoc: http://localhost:8000/redoc
 │   │   ├───domain              # schemas related to domain entities
 │   │   └───utility_schemas     # schemas for other validation
 │   └───services                # not just CRUD related stuff
-└───        
+└    
 ```
 
 
