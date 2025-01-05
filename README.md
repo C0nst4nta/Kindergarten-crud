@@ -10,6 +10,15 @@ Testing: Pytest, HTTPX, and ASGI Lifespan for unit tests
 Settings and Configurations: Managed with python-dotenv  
 Logging: Powered by Loguru  
 
+# Run with Docker
+Build and start the containers:
+```bash
+docker-compose up --build
+```
+Access the application at http://localhost:8000.  
+Explore the API documentation:  
+Swagger UI: http://localhost:8000/docs  
+ReDoc: http://localhost:8000/redoc  
 
 
 
