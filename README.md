@@ -1,6 +1,6 @@
 # API for kindergartens
 
-A FastAPI-based CRUD system designed for managing parents and children records in a kindergarten setting. The project uses PostgreSQL as the database and provides a robust foundation for future extensions like database migrations and unit testing. The system has integrated SMTP functionality for email notifications. You can configure the SMTP server details in your environment variables and use it for sending emails asynchronously through background tasks.
+A FastAPI-based system designed for managing parents and children records in a kindergarten setting. The project uses PostgreSQL as the database and provides a robust foundation for future extensions like database migrations and unit testing. The system has integrated SMTP functionality for email notifications. You can configure the SMTP server details in your environment variables and use it for sending emails asynchronously through background tasks.
 
 # Technologies Used
 
