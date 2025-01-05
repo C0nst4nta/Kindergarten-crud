@@ -10,6 +10,23 @@ Testing: Pytest, HTTPX, and ASGI Lifespan for unit tests
 Settings and Configurations: Managed with python-dotenv  
 Logging: Powered by Loguru  
 
+# Installation
+Clone the repository:
+```bash
+git clone https://github.com/C0nst4nta/kindergarten-online-system.git  
+cd kindergarten-online-system
+```  
+Create a virtual environment and activate it:  
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```  
+Install dependencies:  
+```bash
+pip install -r requirements.txt
+```
+
+
 # Run with Docker
 Build and start the containers:
 ```bash
