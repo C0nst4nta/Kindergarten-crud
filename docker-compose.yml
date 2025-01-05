@@ -17,14 +17,14 @@ services:
   fastapi_server:
     container_name: fastapi_server_container
     build:
-      context: ./asynchronous-fastapi
+      context: ./src
       dockerfile: Dockerfile
-    working_dir: /asynchronous-fastapi
+    working_dir: /src
     ports:
       - "8000:8000"
     command: bash -c "uvicorn app.fastapi_server:app --reload --workers 1 --host 0.0.0.0 --port 8000 --log-level debug"
     volumes:
-      - ./asynchronous-fastapi:/asynchronous-fastapi
+      - ./src:/src
     depends_on:
       - db
       - redis
